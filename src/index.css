@@ -1,0 +1,272 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-chocolate: #29170F;
+    --color-deepbrown: #432719;
+    --color-gold: #C6A56B;
+    --color-warm-beige: #D8C4A4;
+    --color-ivory: #F7F0E4;
+    --color-maroon: #762D32;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    background-color: #1A0E08;
+    color: #F7F0E4;
+    overflow-x: hidden;
+  }
+
+  /* Custom Royal Gold Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #1A0E08;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #432719;
+    border: 1px solid #C6A56B;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #C6A56B;
+  }
+}
+
+/* Subtle Batik Parang Pattern Generator */
+.bg-batik-parang {
+  background-image: radial-gradient(circle at 50% 50%, rgba(198, 165, 107, 0.05) 1px, transparent 1px),
+    repeating-linear-gradient(45deg, rgba(67, 39, 25, 0.35) 0, rgba(67, 39, 25, 0.35) 16px, transparent 16px, transparent 32px);
+  background-size: 40px 40px, 45px 45px;
+}
+
+/* Subtle Kawung Batik Pattern */
+.bg-batik-kawung {
+  background-image: 
+    radial-gradient(circle at 0% 50%, transparent 9px, rgba(198, 165, 107, 0.04) 10px, transparent 11px),
+    radial-gradient(circle at 100% 50%, transparent 9px, rgba(198, 165, 107, 0.04) 10px, transparent 11px),
+    radial-gradient(circle at 50% 0%, transparent 9px, rgba(198, 165, 107, 0.04) 10px, transparent 11px),
+    radial-gradient(circle at 50% 100%, transparent 9px, rgba(198, 165, 107, 0.04) 10px, transparent 11px);
+  background-size: 32px 32px;
+}
+
+/* Batik Ceplok — rosette geometris bertumpuk */
+.bg-batik-ceplok {
+  background-image:
+    radial-gradient(circle at 50% 50%, rgba(198, 165, 107, 0.07) 0 2px, transparent 3px),
+    radial-gradient(circle at 50% 50%, transparent 8px, rgba(198, 165, 107, 0.05) 9px, transparent 10px),
+    radial-gradient(circle at 0% 0%, transparent 7px, rgba(198, 165, 107, 0.045) 8px, transparent 9px),
+    radial-gradient(circle at 100% 0%, transparent 7px, rgba(198, 165, 107, 0.045) 8px, transparent 9px),
+    radial-gradient(circle at 0% 100%, transparent 7px, rgba(198, 165, 107, 0.045) 8px, transparent 9px),
+    radial-gradient(circle at 100% 100%, transparent 7px, rgba(198, 165, 107, 0.045) 8px, transparent 9px);
+  background-size: 44px 44px;
+}
+
+/* Aged Parchment / Textured Paper Overlay */
+.bg-parchment-texture {
+  background-color: #29170F;
+  background-image: radial-gradient(ellipse at center, rgba(67, 39, 25, 0.7) 0%, rgba(26, 14, 8, 0.95) 100%);
+}
+
+/* Golden text gradient */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #F4E0B9 0%, #DFB76C 45%, #C6A56B 70%, #9E793B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gold-glow {
+  text-shadow: 0 0 16px rgba(223, 183, 108, 0.45), 0 0 35px rgba(198, 165, 107, 0.2);
+}
+
+/* Golden border box with subtle inner glow */
+.gold-frame {
+  border: 1px solid rgba(198, 165, 107, 0.4);
+  box-shadow: inset 0 0 15px rgba(198, 165, 107, 0.08), 0 8px 30px rgba(0, 0, 0, 0.5);
+}
+
+.gold-frame-double {
+  border: 1px solid rgba(198, 165, 107, 0.5);
+  outline: 1px solid rgba(198, 165, 107, 0.25);
+  outline-offset: 4px;
+}
+
+/* Glassmorphism Dark Card */
+.glass-royal-card {
+  background: rgba(41, 23, 15, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(198, 165, 107, 0.25);
+}
+
+.glass-royal-card-hover {
+  transition: all 0.35s ease;
+}
+.glass-royal-card-hover:hover {
+  border-color: rgba(198, 165, 107, 0.6);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6), 0 0 20px rgba(198, 165, 107, 0.15);
+  transform: translateY(-3px);
+}
+
+/* =========================================================================
+   ANIMASI WAYANG  ·  gerak halus seperti dimainkan dalang
+   ========================================================================= */
+@keyframes wayangSway {
+  0%, 100% { transform: rotate(-0.7deg); }
+  50% { transform: rotate(0.7deg); }
+}
+@keyframes wayangArmPlay {
+  0%, 100% { transform: rotate(0deg); }
+  45% { transform: rotate(-5deg); }
+  70% { transform: rotate(2.5deg); }
+}
+@keyframes wayangHeadNod {
+  0%, 100% { transform: rotate(-0.8deg); }
+  50% { transform: rotate(1.2deg); }
+}
+@keyframes wayangCross {
+  0% { transform: translateX(-16%) rotate(-3deg); opacity: 0; }
+  14% { opacity: 0.85; }
+  86% { opacity: 0.85; }
+  100% { transform: translateX(116%) rotate(3deg); opacity: 0; }
+}
+@keyframes petalFall {
+  0% { transform: translate3d(0, -8vh, 0) rotate(0deg); opacity: 0; }
+  12% { opacity: 0.9; }
+  88% { opacity: 0.8; }
+  100% { transform: translate3d(var(--drift, 40px), 106vh, 0) rotate(420deg); opacity: 0; }
+}
+@keyframes emberRise {
+  0% { transform: translate3d(0, 0, 0) scale(0.6); opacity: 0; }
+  20% { opacity: 0.9; }
+  100% { transform: translate3d(var(--drift, 20px), -70vh, 0) scale(1.1); opacity: 0; }
+}
+@keyframes blencongFlicker {
+  0%, 100% { opacity: 0.75; transform: scale(1); }
+  35% { opacity: 1; transform: scale(1.05); }
+  60% { opacity: 0.82; transform: scale(0.98); }
+}
+@keyframes garudaFloat {
+  0%, 100% { transform: translateY(0) translateX(0); }
+  50% { transform: translateY(-14px) translateX(10px); }
+}
+@keyframes goldSweep {
+  0% { transform: translateX(-120%) skewX(-18deg); opacity: 0; }
+  40% { opacity: 0.55; }
+  100% { transform: translateX(220%) skewX(-18deg); opacity: 0; }
+}
+@keyframes marqueeSoft {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.wayang-sway { animation: wayangSway 7s ease-in-out infinite; }
+.wayang-arm { animation: wayangArmPlay 9s ease-in-out infinite; }
+.wayang-head { animation: wayangHeadNod 11s ease-in-out infinite; }
+.wayang-cross-lane { animation: wayangCross 34s linear infinite; }
+.blencong { animation: blencongFlicker 5s ease-in-out infinite; }
+.garuda-float { animation: garudaFloat 16s ease-in-out infinite; }
+.animate-marquee-soft { animation: marqueeSoft 38s linear infinite; }
+
+/* Efek kilau emas melintas pada tombol / bingkai */
+.gold-sheen {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+.gold-sheen::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 233, 176, 0.42), transparent);
+  transform: translateX(-120%) skewX(-18deg);
+  pointer-events: none;
+}
+.gold-sheen:hover::after,
+.gold-sheen:focus-visible::after {
+  animation: goldSweep 1.05s ease-out;
+}
+
+/* Kaligrafi Arab */
+.font-arabic {
+  font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+  direction: rtl;
+  line-height: 2.15;
+}
+
+/* Bayangan wayang untuk efek melintas */
+.wayang-shadow {
+  filter: brightness(0.24) saturate(0.6) blur(0.4px);
+}
+
+/* Mask fade untuk tepi section */
+.mask-fade-y {
+  mask-image: linear-gradient(to bottom, transparent, black 12%, black 88%, transparent);
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black 12%, black 88%, transparent);
+}
+
+/* Teks berkilau emas */
+.text-shimmer {
+  background: linear-gradient(90deg, #8C6E3B 0%, #F4E0B9 45%, #C6A56B 60%, #8C6E3B 100%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 4.5s linear infinite;
+}
+
+/* Scrollbar disembunyikan untuk carousel */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* =========================================================================
+   VARIAN TEMA  ·  data yang sama, suasana berbeda
+   =========================================================================
+   `template` pada InvitationConfig hanya mengubah atribut data-theme di
+   <html>. Tidak ada satu pun nama/nama tamu/foto yang ikut berubah — inilah
+   pemisahan antara "template visual" dan "data undangan".
+   ========================================================================= */
+[data-theme='jawa-royal'] {
+  --theme-wash: transparent;
+  --theme-accent: rgba(198, 165, 107, 0.55);
+}
+[data-theme='jawa-maroon'] {
+  --theme-wash: rgba(118, 45, 50, 0.22);
+  --theme-accent: rgba(174, 88, 92, 0.7);
+}
+[data-theme='jawa-ivory'] {
+  --theme-wash: rgba(247, 240, 228, 0.12);
+  --theme-accent: rgba(247, 240, 228, 0.6);
+}
+
+/* Lapisan tipis di atas isi undangan — seperti cahaya blencong yang berbeda. */
+.theme-wash-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 25;
+  pointer-events: none;
+  background: var(--theme-wash, transparent);
+  mix-blend-mode: soft-light;
+}
+
+/* Garis aksen mengikuti tema pada elemen bertanda .theme-accent-line */
+.theme-accent-line {
+  border-color: var(--theme-accent, rgba(198, 165, 107, 0.55));
+}
+
+/* Hormati prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

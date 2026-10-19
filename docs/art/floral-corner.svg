@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 320" width="460" height="320">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8C6E3B"/>
+      <stop offset="45%" stop-color="#C6A56B"/>
+      <stop offset="100%" stop-color="#EDD6A4"/>
+    </linearGradient>
+    <linearGradient id="roseG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#9A3B42"/>
+      <stop offset="55%" stop-color="#762D32"/>
+      <stop offset="100%" stop-color="#4A181C"/>
+    </linearGradient>
+    <linearGradient id="roseG2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#B04A4F"/>
+      <stop offset="100%" stop-color="#5E2126"/>
+    </linearGradient>
+    <linearGradient id="leafG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4A3520"/>
+      <stop offset="100%" stop-color="#241708"/>
+    </linearGradient>
+    <radialGradient id="jasmineG" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFBF2"/>
+      <stop offset="100%" stop-color="#DFD2B8"/>
+    </radialGradient>
+  </defs>
+  <rect width="460" height="320" fill="#1A0E08"/>
+
+  <!-- TANGKAI UTAMA -->
+  <g fill="none" stroke="url(#gold)" stroke-width="2.4" stroke-linecap="round">
+    <path d="M14 300C60 280 108 250 150 212 196 170 236 124 286 88 320 64 356 48 396 40"/>
+    <path d="M150 212C132 178 108 154 74 142"/>
+    <path d="M286 88C286 58 300 32 326 14"/>
+    <path d="M226 142C250 150 278 150 300 140"/>
+    <path d="M110 246C126 262 148 272 176 274"/>
+  </g>
+
+  <!-- DAUN -->
+  <g fill="url(#leafG)" stroke="url(#gold)" stroke-width="1.1">
+    <path d="M74 142c-26-4-46 4-58 20 22 4 42 0 58-14 12-10 14-25 10-40-14 6-22 20-10 34Z"/>
+    <path d="M326 14c-4-22 4-38 18-48 4 20 0 36-12 48-10 10-24 12-38 8 6-12 20-18 32-8Z"/>
+    <path d="M300 140c14 18 14 38 4 54-12-14-16-32-10-48 6-16 20-26 36-28-2 14-14 26-30 22Z"/>
+    <path d="M176 274c18 8 28 24 28 42-16-8-26-22-28-38-2-16 6-32 20-40 2 16-6 30-20 36Z"/>
+    <path d="M228 186c20 6 34 22 36 42-18-8-30-24-32-40-2-16 6-30 20-36 2 16-8 30-24 34Z" opacity="0.9"/>
+    <path d="M210 46c4-20 18-34 36-38-6 18-18 32-34 36-16 4-32-2-40-16 16-2 30 6 38 18Z" opacity="0.9"/>
+    <path d="M60 214c-22 0-40-10-48-28 22 0 40 10 50 26 8 14 6 30-4 42-6-14-4-28 2-40Z" opacity="0.85"/>
+    <path d="M396 40c22-6 42 0 52 16-22 6-42 0-54-14-10-14-10-30 0-42 6 14 6 28 2 40Z" opacity="0.85"/>
+  </g>
+
+  <!-- ROS MAROON -->
+  <g id="rose-a" transform="translate(146 210)">
+    <path d="M0 -26C16 -26 26 -16 26 0 26 16 16 26 0 26 -16 26 -26 16 -26 0 -26 -16 -16 -26 0 -26Z" fill="url(#roseG)"/>
+    <path d="M-26 0c0-14 12-26 26-26 14 0 26 12 26 26" fill="none" stroke="url(#gold)" stroke-width="1.5" opacity="0.8"/>
+    <path d="M-18 4c-2-12 8-22 20-22 12 0 20 8 20 18 0 10-8 18-18 18" fill="none" stroke="url(#gold)" stroke-width="1.4"/>
+    <path d="M-9 6c-1-8 5-15 14-15 8 0 13 5 13 11 0 7-6 12-12 12" fill="none" stroke="url(#gold)" stroke-width="1.2"/>
+    <path d="M-2 4c0-5 3-8 8-8 4 0 7 3 7 7 0 4-4 7-8 7" fill="none" stroke="url(#gold)" stroke-width="1.1"/>
+    <circle cx="0" cy="0" r="2.6" fill="url(#gold)"/>
+  </g>
+  <g id="rose-b" transform="translate(286 88) scale(0.82)">
+    <path d="M0 -26C16 -26 26 -16 26 0 26 16 16 26 0 26 -16 26 -26 16 -26 0 -26 -16 -16 -26 0 -26Z" fill="url(#roseG2)"/>
+    <path d="M-26 0c0-14 12-26 26-26 14 0 26 12 26 26" fill="none" stroke="url(#gold)" stroke-width="1.6" opacity="0.8"/>
+    <path d="M-18 4c-2-12 8-22 20-22 12 0 20 8 20 18 0 10-8 18-18 18" fill="none" stroke="url(#gold)" stroke-width="1.5"/>
+    <path d="M-9 6c-1-8 5-15 14-15 8 0 13 5 13 11 0 7-6 12-12 12" fill="none" stroke="url(#gold)" stroke-width="1.3"/>
+    <circle cx="0" cy="0" r="2.6" fill="url(#gold)"/>
+  </g>
+  <g id="rose-c" transform="translate(56 262) scale(0.66)">
+    <path d="M0 -26C16 -26 26 -16 26 0 26 16 16 26 0 26 -16 26 -26 16 -26 0 -26 -16 -16 -26 0 -26Z" fill="url(#roseG)"/>
+    <path d="M-20 2c-2-12 8-22 20-22s20 8 20 18-8 18-18 18" fill="none" stroke="url(#gold)" stroke-width="1.6"/>
+    <path d="M-10 5c-1-8 5-14 13-14s13 5 13 11-6 12-12 12" fill="none" stroke="url(#gold)" stroke-width="1.4"/>
+    <circle cx="0" cy="0" r="2.4" fill="url(#gold)"/>
+  </g>
+  <g id="rose-d" transform="translate(370 60) scale(0.58)">
+    <path d="M0 -26C16 -26 26 -16 26 0 26 16 16 26 0 26 -16 26 -26 16 -26 0 -26 -16 -16 -26 0 -26Z" fill="url(#roseG2)"/>
+    <path d="M-20 2c-2-12 8-22 20-22s20 8 20 18-8 18-18 18" fill="none" stroke="url(#gold)" stroke-width="1.8"/>
+    <circle cx="0" cy="0" r="2.6" fill="url(#gold)"/>
+  </g>
+
+  <!-- MELATI PUTIH -->
+  <g stroke="url(#gold)" stroke-width="0.9">
+    <g transform="translate(214 152) scale(1.15)">
+      <path d="M0 -9C4 -5 4 5 0 9 -4 5 -4 -5 0 -9Z" fill="url(#jasmineG)"/>
+      <path d="M-9 0C-5 4 5 4 9 0 5 -4 -5 -4 -9 0Z" fill="url(#jasmineG)"/>
+      <path d="M-6 -6C-1 -4 1 4 6 6 1 4 -1 -4 -6 -6Z" fill="url(#jasmineG)"/>
+      <path d="M6 -6C1 -4 -1 4 -6 6 -1 4 1 -4 6 -6Z" fill="url(#jasmineG)"/>
+      <circle cx="0" cy="0" r="2.2" fill="#C6A56B"/>
+    </g>
+    <g transform="translate(100 232) scale(0.95)">
+      <path d="M0 -9C4 -5 4 5 0 9 -4 5 -4 -5 0 -9Z" fill="url(#jasmineG)"/>
+      <path d="M-9 0C-5 4 5 4 9 0 5 -4 -5 -4 -9 0Z" fill="url(#jasmineG)"/>
+      <circle cx="0" cy="0" r="2.2" fill="#C6A56B"/>
+    </g>
+    <g transform="translate(256 44) scale(0.9)">
+      <path d="M0 -9C4 -5 4 5 0 9 -4 5 -4 -5 0 -9Z" fill="url(#jasmineG)"/>
+      <path d="M-9 0C-5 4 5 4 9 0 5 -4 -5 -4 -9 0Z" fill="url(#jasmineG)"/>
+      <circle cx="0" cy="0" r="2.2" fill="#C6A56B"/>
+    </g>
+    <g transform="translate(330 148) scale(0.8)">
+      <path d="M0 -9C4 -5 4 5 0 9 -4 5 -4 -5 0 -9Z" fill="url(#jasmineG)"/>
+      <path d="M-9 0C-5 4 5 4 9 0 5 -4 -5 -4 -9 0Z" fill="url(#jasmineG)"/>
+      <circle cx="0" cy="0" r="2.2" fill="#C6A56B"/>
+    </g>
+    <g transform="translate(196 288) scale(0.72)">
+      <path d="M0 -9C4 -5 4 5 0 9 -4 5 -4 -5 0 -9Z" fill="url(#jasmineG)"/>
+      <path d="M-9 0C-5 4 5 4 9 0 5 -4 -5 -4 -9 0Z" fill="url(#jasmineG)"/>
+      <circle cx="0" cy="0" r="2.2" fill="#C6A56B"/>
+    </g>
+    <g transform="translate(36 200) scale(0.66)">
+      <path d="M0 -9C4 -5 4 5 0 9 -4 5 -4 -5 0 -9Z" fill="url(#jasmineG)"/>
+      <path d="M-9 0C-5 4 5 4 9 0 5 -4 -5 -4 -9 0Z" fill="url(#jasmineG)"/>
+      <circle cx="0" cy="0" r="2.2" fill="#C6A56B"/>
+    </g>
+  </g>
+
+  <!-- KUNCUP -->
+  <g fill="url(#roseG)" stroke="url(#gold)" stroke-width="1">
+    <path d="M126 118c-8-6-10-18-4-26 8-2 16 4 18 14 2 8-4 14-14 12Z"/>
+    <path d="M330 178c8-6 10-18 4-26-8-2-16 4-18 14-2 8 4 14 14 12Z"/>
+  </g>
+
+  <!-- PUTIK BUNGA BERTABURAN -->
+  <g fill="url(#gold)" opacity="0.75">
+    <circle cx="72" cy="86" r="2.2"/>
+    <circle cx="110" cy="60" r="1.7"/>
+    <circle cx="182" cy="96" r="2"/>
+    <circle cx="360" cy="112" r="1.9"/>
+    <circle cx="418" cy="86" r="1.6"/>
+    <circle cx="300" cy="240" r="2"/>
+    <circle cx="248" cy="292" r="1.7"/>
+    <circle cx="40" cy="316" r="1.9"/>
+  </g>
+</svg>

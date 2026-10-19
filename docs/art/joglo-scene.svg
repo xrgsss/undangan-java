@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" width="1200" height="620">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#180C06"/>
+      <stop offset="38%" stop-color="#33190D"/>
+      <stop offset="66%" stop-color="#5E3116"/>
+      <stop offset="88%" stop-color="#8A4E22"/>
+      <stop offset="100%" stop-color="#A9662C"/>
+    </linearGradient>
+    <radialGradient id="sunGlow" cx="50%" cy="72%" r="46%">
+      <stop offset="0%" stop-color="#FFDE9A" stop-opacity="0.8"/>
+      <stop offset="42%" stop-color="#E8A94E" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#C6A56B" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="farHill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4A2714"/>
+      <stop offset="100%" stop-color="#331A0D"/>
+    </linearGradient>
+    <linearGradient id="nearHill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2A150C"/>
+      <stop offset="100%" stop-color="#1A0D06"/>
+    </linearGradient>
+    <linearGradient id="roofGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#52301A"/>
+      <stop offset="100%" stop-color="#1E1007"/>
+    </linearGradient>
+    <linearGradient id="groundGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2A170C"/>
+      <stop offset="100%" stop-color="#120903"/>
+    </linearGradient>
+    <radialGradient id="lampGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFE1A0" stop-opacity="0.95"/>
+      <stop offset="42%" stop-color="#F0B95E" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#E8A94E" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="groundGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#E8A94E" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#E8A94E" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F6E3B6"/>
+      <stop offset="50%" stop-color="#C6A56B"/>
+      <stop offset="100%" stop-color="#7E5F2E"/>
+    </linearGradient>
+    <linearGradient id="mist" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C6A56B" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#C6A56B" stop-opacity="0.16"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="620" fill="url(#sky)"/>
+  <ellipse cx="600" cy="440" rx="560" ry="290" fill="url(#sunGlow)"/>
+
+  <!-- GUNUNG -->
+  <path d="M0 402L120 316 220 372 330 262 430 356 540 296 660 372 780 288 900 366 1020 306 1120 372 1200 336V450H0Z" fill="url(#farHill)" opacity="0.7"/>
+  <path d="M0 428L140 366 260 420 400 342 520 412 660 356 800 420 940 358 1080 420 1200 380V458H0Z" fill="url(#nearHill)" opacity="0.88"/>
+
+  <!-- PEPOHONAN JAUH -->
+  <g fill="#1C0E07" opacity="0.9">
+    <path d="M96 446c-14-4-22-14-20-24 2-12 14-18 26-14 4-12 18-18 30-12 12 6 14 20 6 30 8 6 6 16-4 20-12 5-28 5-38 0Z"/>
+    <path d="M120 446v24"/><path d="M1120 442c-12-4-20-13-18-22 2-11 13-16 24-13 4-11 16-16 27-11 11 6 13 18 5 27 7 6 5 15-4 18-11 5-25 4-34 1Z"/>
+    <path d="M1142 442v28"/>
+  </g>
+  <rect x="0" y="436" width="1200" height="64" fill="url(#mist)"/>
+
+  <!-- ============ JOGLO ============ -->
+  <g transform="translate(364 190) scale(0.62)">
+    <!-- MOLO (puncak atap) -->
+    <path d="M380 20c-8-6-8-16 0-22 8 6 8 16 0 22Z" fill="url(#gold)"/>
+    <rect x="368" y="18" width="24" height="14" rx="2" fill="url(#gold)" stroke="#7E5F2E" stroke-width="1"/>
+    <!-- BRUNJUNG (atap tingkat atas) -->
+    <path d="M380 32C360 62 330 104 292 140H468C430 104 400 62 380 32Z" fill="url(#roofGrad)" stroke="url(#gold)" stroke-width="2"/>
+    <!-- tumpang brunjung -->
+    <g stroke="url(#gold)" stroke-width="1.4" fill="none" opacity="0.9">
+      <path d="M292 140H468"/>
+      <path d="M280 150H480"/>
+      <path d="M288 146c10 8 20 8 30 0M326 146c10 8 20 8 30 0M364 146c10 8 20 8 30 0M402 146c10 8 20 8 30 0M440 146c10 8 20 8 30 0"/>
+    </g>
+    <!-- PENANGGAP (atap tingkat bawah, lebih lebar dengan tritisan) -->
+    <path d="M280 158H480L606 258H154Z" fill="url(#roofGrad)" stroke="url(#gold)" stroke-width="2"/>
+    <path d="M154 258C132 254 112 244 102 230c16 6 34 10 52 12Z" fill="url(#roofGrad)" stroke="url(#gold)" stroke-width="1.5"/>
+    <path d="M606 258C628 254 648 244 658 230c-16 6-34 10-52 12Z" fill="url(#roofGrad)" stroke="url(#gold)" stroke-width="1.5"/>
+    <g stroke="url(#gold)" stroke-width="1.4" fill="none" opacity="0.9">
+      <path d="M154 258H606"/>
+      <path d="M142 270H618"/>
+      <path d="M148 264c12 9 24 9 36 0M196 264c12 9 24 9 36 0M244 264c12 9 24 9 36 0M292 264c12 9 24 9 36 0M340 264c12 9 24 9 36 0M388 264c12 9 24 9 36 0M436 264c12 9 24 9 36 0M484 264c12 9 24 9 36 0M532 264c12 9 24 9 36 0"/>
+    </g>
+    <!-- rongga pendopo -->
+    <path d="M158 278H602V430H158Z" fill="#120803"/>
+    <!-- gebyok ukir (dinding belakang) -->
+    <g stroke="url(#gold)" stroke-width="1.1" fill="none" opacity="0.4">
+      <path d="M196 300h108v130H196Z"/>
+      <path d="M456 300h108v130H456Z"/>
+      <path d="M214 322c14-10 32-10 46 0M214 356c14-10 32-10 46 0M214 390c14-10 32-10 46 0"/>
+      <path d="M474 322c14-10 32-10 46 0M474 356c14-10 32-10 46 0M474 390c14-10 32-10 46 0"/>
+    </g>
+    <!-- soko guru (4 tiang utama) -->
+    <g fill="url(#roofGrad)" stroke="url(#gold)" stroke-width="1.8">
+      <rect x="170" y="278" width="26" height="152"/>
+      <rect x="322" y="278" width="26" height="152"/>
+      <rect x="412" y="278" width="26" height="152"/>
+      <rect x="564" y="278" width="26" height="152"/>
+    </g>
+    <g stroke="url(#gold)" stroke-width="1" fill="none" opacity="0.65">
+      <path d="M175 306c6 4 11 4 16 0M175 340c6 4 11 4 16 0M175 374c6 4 11 4 16 0M175 408c6 4 11 4 16 0"/>
+      <path d="M327 306c6 4 11 4 16 0M327 340c6 4 11 4 16 0M327 374c6 4 11 4 16 0M327 408c6 4 11 4 16 0"/>
+      <path d="M417 306c6 4 11 4 16 0M417 340c6 4 11 4 16 0M417 374c6 4 11 4 16 0M417 408c6 4 11 4 16 0"/>
+      <path d="M569 306c6 4 11 4 16 0M569 340c6 4 11 4 16 0M569 374c6 4 11 4 16 0M569 408c6 4 11 4 16 0"/>
+    </g>
+    <!-- tiang penanggap luar -->
+    <g fill="url(#roofGrad)" stroke="url(#gold)" stroke-width="1.4" opacity="0.95">
+      <rect x="112" y="288" width="18" height="142"/>
+      <rect x="630" y="288" width="18" height="142"/>
+    </g>
+    <!-- lampu gantung -->
+    <ellipse cx="380" cy="330" rx="190" ry="150" fill="url(#lampGlow)" opacity="0.5"/>
+    <path d="M380 278v30" stroke="url(#gold)" stroke-width="1.4"/>
+    <path d="M358 308h44l-8 26h-28Z" fill="url(#gold)" opacity="0.95"/>
+    <circle cx="380" cy="298" r="5" fill="#FFF0C4"/>
+    <!-- lantai & undakan -->
+    <path d="M142 430H618V456H142Z" fill="url(#roofGrad)" stroke="url(#gold)" stroke-width="1.6"/>
+    <path d="M180 456H580V478H180Z" fill="#1C0E07" stroke="url(#gold)" stroke-width="1.2"/>
+    <path d="M212 478H548V500H212Z" fill="#150A05" stroke="url(#gold)" stroke-width="1.2"/>
+    <path d="M244 500H516V522H244Z" fill="#100703" stroke="url(#gold)" stroke-width="1.2"/>
+    <ellipse cx="380" cy="470" rx="240" ry="56" fill="url(#groundGlow)"/>
+  </g>
+
+  <!-- ============ CANDI BENTAR (kanan) ============ -->
+  <g transform="translate(944 300) scale(0.72)" fill="url(#roofGrad)" stroke="url(#gold)" stroke-width="1.6">
+    <path d="M14 210V54l14-46 14 46v156Z"/>
+    <path d="M104 210V54l14-46 14 46v156Z"/>
+    <path d="M6 76h120l10 20H-4Z"/>
+    <path d="M0 110h132l8 16H-8Z"/>
+    <path d="M-10 148h152l10 22H-20Z"/>
+    <path d="M-22 200h176l12 26H-34Z"/>
+    <g stroke="url(#gold)" stroke-width="1" fill="none" opacity="0.7">
+      <path d="M22 90h0M22 130h0"/>
+      <path d="M6 86c6 5 12 5 18 0M112 86c6 5 12 5 18 0"/>
+    </g>
+  </g>
+
+  <!-- ============ PENDOPO KECIL (kiri) ============ -->
+  <g transform="translate(70 306) scale(0.62)">
+    <rect x="150" y="8" width="20" height="12" rx="2" fill="url(#gold)"/>
+    <path d="M160 20C144 44 118 80 88 110H232C202 80 176 44 160 20Z" fill="url(#roofGrad)" stroke="url(#gold)" stroke-width="2"/>
+    <g stroke="url(#gold)" stroke-width="1.3" fill="none" opacity="0.9">
+      <path d="M88 110H232"/><path d="M78 122H242"/>
+      <path d="M84 116c8 7 16 7 24 0M124 116c8 7 16 7 24 0M164 116c8 7 16 7 24 0M204 116c8 7 16 7 24 0"/>
+    </g>
+    <path d="M78 128H242L326 224H-6Z" fill="url(#roofGrad)" stroke="url(#gold)" stroke-width="2"/>
+    <path d="M-6 224C-26 221-44 212-52 200c14 5 30 8 46 10Z" fill="url(#roofGrad)" stroke="url(#gold)" stroke-width="1.4"/>
+    <path d="M326 224C346 221 364 212 372 200c-14 5-30 8-46 10Z" fill="url(#roofGrad)" stroke="url(#gold)" stroke-width="1.4"/>
+    <g stroke="url(#gold)" stroke-width="1.3" fill="none" opacity="0.9">
+      <path d="M-6 224H326"/><path d="M-14 236H334"/>
+      <path d="M-8 230c10 8 20 8 30 0M42 230c10 8 20 8 30 0M92 230c10 8 20 8 30 0M142 230c10 8 20 8 30 0M192 230c10 8 20 8 30 0M242 230c10 8 20 8 30 0M292 230c10 8 20 8 30 0"/>
+    </g>
+    <path d="M0 244H320V362H0Z" fill="#120803"/>
+    <g fill="url(#roofGrad)" stroke="url(#gold)" stroke-width="1.6">
+      <rect x="10" y="244" width="20" height="118"/>
+      <rect x="290" y="244" width="20" height="118"/>
+      <rect x="150" y="244" width="20" height="118"/>
+    </g>
+    <ellipse cx="160" cy="300" rx="130" ry="90" fill="url(#lampGlow)" opacity="0.42"/>
+    <path d="M160 244v22" stroke="url(#gold)" stroke-width="1.2"/>
+    <path d="M144 266h32l-6 20h-20Z" fill="url(#gold)"/>
+    <path d="M-14 362H334V384H-14Z" fill="url(#roofGrad)" stroke="url(#gold)" stroke-width="1.4"/>
+    <path d="M14 384H306V404H14Z" fill="#190D06" stroke="url(#gold)" stroke-width="1"/>
+    <ellipse cx="160" cy="378" rx="150" ry="34" fill="url(#groundGlow)"/>
+  </g>
+
+  <!-- TANAH -->
+  <path d="M0 500C160 486 320 496 480 504 660 513 860 496 1040 502 1110 504 1160 508 1200 512V620H0Z" fill="url(#groundGrad)"/>
+
+  <!-- POHON & TAMAN DEPAN -->
+  <g fill="#120903">
+    <path d="M74 620V470c0-10-6-18-14-22 12 2 22 10 26 22 4-14 16-24 30-26-10 6-16 16-16 26v150Z"/>
+    <path d="M46 452c-14-6-20-20-14-32 6-12 22-16 34-8 8-12 26-14 36-4 10 10 8 26-4 34-8 6-18 8-28 6-6 2-16 5-24 4Z"/>
+    <path d="M104 434c-10-4-14-14-10-22 4-8 16-11 24-6 6-8 18-10 25-3 7 7 6 18-3 24-6 4-12 5-20 4-4 1-11 3-16 3Z"/>
+    <path d="M1150 620V452c0-6-4-10-10-12 10 0 18 6 22 14 4-10 14-16 24-16-8 4-12 12-12 20v162Z"/>
+    <g stroke="#120903" stroke-width="9" fill="none" stroke-linecap="round">
+      <path d="M1162 448c-26-16-52-16-70-2M1162 448c-24 14-44 34-50 54M1162 448c4-22 20-36 40-40M1162 448c26-4 48 8 60 28"/>
+    </g>
+    <path d="M180 620c-8-30 4-56 28-70-10 26-6 50 8 70Z"/>
+    <path d="M216 620c-4-24 6-44 24-54-8 20-6 38 4 54Z"/>
+    <path d="M880 620c8-34-4-62-30-78 12 30 6 56-10 78Z"/>
+    <path d="M920 620c4-26-6-46-24-56 8 20 6 40-4 56Z"/>
+    <path d="M0 604c60-10 120-14 180-12v28H0Z"/>
+    <path d="M1020 610c60-6 120-6 180 4v6h-180Z"/>
+  </g>
+
+  <g stroke="url(#gold)" stroke-width="1.1" fill="none" opacity="0.6">
+    <path d="M300 620c0-20 2-36 6-48M306 596c-6-8-14-12-22-12M306 592c8-8 18-10 26-6"/>
+    <path d="M760 620c0-22-2-38-6-50M754 592c-8-8-18-10-28-8M754 588c8-10 20-12 30-8"/>
+  </g>
+
+  <g stroke="#2A1509" stroke-width="2.6" fill="none" stroke-linecap="round">
+    <path d="M420 150c8-8 16-8 22 0 6-8 14-8 22 0"/>
+    <path d="M470 182c6-6 12-6 17 0 5-6 11-6 17 0"/>
+    <path d="M790 130c8-8 16-8 22 0 6-8 14-8 22 0"/>
+    <path d="M742 172c5-5 10-5 14 0 4-5 9-5 14 0"/>
+  </g>
+</svg>
